@@ -1,0 +1,6 @@
+{
+  "name": "AI Revenue Recovery",
+  "description": "Recover abandoned checkouts and failed payments using automated AI voice calls and WhatsApp messages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

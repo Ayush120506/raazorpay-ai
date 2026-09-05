@@ -1,0 +1,21 @@
+{
+  "framework": "vite",
+  "functions": {
+    "dist/server.cjs": {
+      "runtime": "nodejs20"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/server.cjs/api/$1" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "Deny" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ]
+}
